@@ -1,0 +1,55 @@
+.review{
+    margin-bottom: 6rem;
+    z-index: 3;
+    position: relative;
+
+    &-grid{
+        grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+        display: grid;
+        grid-gap: 3rem;
+    }
+    &__item{
+        background: #1e1b41;
+        padding: 2rem 4rem;
+        border-radius: .5rem;
+
+        .img__box{
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        h4{
+            text-align: center;
+            text-transform: uppercase;
+            color:#fff;
+        }
+        p{
+            text-align: center;
+            color:$primary-dark;
+            text-transform: uppercase;
+        }
+
+        .p__text{
+            font-size: 1.2rem;
+            text-align: left;
+            color:$text1;
+            line-height: 1.6;
+        }
+
+        .rating__box{
+            h5{
+                font-weight: 300;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .right2{
+        position: absolute;
+        // display: block;
+        width: 10%;
+        right: 0;
+        top: 0;
+        transform: translateY(-70%);
+    }
+}

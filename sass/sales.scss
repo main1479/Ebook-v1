@@ -1,0 +1,67 @@
+.sales{
+    padding: 10rem 0;
+    margin-bottom: 8rem;
+    background:linear-gradient(90deg,$primary-light,$primary-dark);
+    position: relative;
+
+    h2{
+        font-size: 8rem;
+        font-weight: 600;
+        line-height: 1;
+        position: relative;
+        z-index: 3;
+        @media only screen and (max-width:$px575){
+            font-size: 6rem;
+        }
+    }
+
+    .p__text{
+        color:#fff;
+        position: relative;
+        z-index: 3;
+    }
+
+    .social__icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+
+        .social__icon{
+            &:link,
+            &:visited{
+                display: block;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:#246492;
+                transition: all .3s;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &-bg{
+        position: absolute;
+        width: 30%;
+        right: 0;
+        top: 50%;
+        transform: translate(10%,-50%);
+        z-index: 1; 
+        @media only screen and (max-width:$px768){
+            display: none;
+        }
+    }
+}
